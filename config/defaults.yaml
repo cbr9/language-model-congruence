@@ -1,0 +1,4 @@
+gpu: null
+token_type: form
+datasets: [french, spanish]
+models: [xlm-roberta-base, bert-base-multilingual-cased]
