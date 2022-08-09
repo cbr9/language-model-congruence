@@ -5,6 +5,8 @@ multirun/
 .conda/
 conda/
 data/
+.huggingface/
+.cache/
 
 
 # Byte-compiled / optimized / DLL files

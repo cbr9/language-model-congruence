@@ -1,17 +1,16 @@
 # -*- coding: utf-8 -*-
 
-from dataclasses import dataclass
-from collections import defaultdict
 import logging
-from typing import Dict, List, Union
+from dataclasses import dataclass
 from pathlib import Path
-import conllu
+from typing import List, Tuple
 
+import conllu
 import requests
 from tqdm import tqdm
 
-from src.config import Config, TokenType
-
+from src import utils
+from src.config import Config
 
 log = logging.getLogger(f"{Path(__file__).name}:{__name__}")
 
@@ -22,8 +21,15 @@ dataset2url = {
     "russian": "https://github.com/UniversalDependencies/UD_Russian-PUD/raw/master/ru_pud-ud-test.conllu",
     "portuguese": "https://github.com/UniversalDependencies/UD_Portuguese-PUD/raw/master/pt_pud-ud-test.conllu",
     "polish": "https://github.com/UniversalDependencies/UD_Polish-PUD/raw/master/pl_pud-ud-test.conllu",
-    "korean": "https://github.com/UniversalDependencies/UD_Korean-PUD/raw/master/ko_pud-ud-test.conllu"
+    "korean": "https://github.com/UniversalDependencies/UD_Korean-PUD/raw/master/ko_pud-ud-test.conllu",
 }
+
+
+@dataclass
+class Sentence:
+    tokens: List[str]
+    sentence_id: str
+
 
 @dataclass
 class Dataset:
@@ -31,36 +37,50 @@ class Dataset:
     train: List[conllu.TokenList]
     test: List[conllu.TokenList]
 
-    def extract_sentences(self, config: Config):
-        train_sentences = [token[config.token_type.value] for sent in tqdm(self.train, desc=f"Extracting training sentences for dataset '{self.name}'") for token in sent]
-        test_sentences = [token[config.token_type.value] for sent in tqdm(self.test, desc=f"Extracting test sentences for dataset '{self.name}'") for token in sent]
+    def extract_sentences(self, token_type: str) -> Tuple[List[Sentence], List[Sentence]]:
+        train_sentences = []
+        test_sentences = []
+        for sent in tqdm(
+            self.train,
+            desc=f"Extracting training sentences for dataset '{self.name}'",
+        ):
+            train_sentences.append(
+                Sentence(
+                    tokens=[token[token_type] for token in sent],
+                    sentence_id=sent.metadata["sent_id"],
+                )
+            )
+        for sent in tqdm(
+            self.test, desc=f"Extracting test sentences for dataset '{self.name}'"
+        ):
+            test_sentences.append(
+                Sentence(
+                    tokens=[token[token_type] for token in sent],
+                    sentence_id=sent.metadata["sent_id"],
+                )
+            )
         return train_sentences, test_sentences
+
 
 class DataLoader:
     def __init__(self, config: Config) -> None:
 
         self.config = config
 
-        data = Path(__file__).parent.parent.joinpath("data")
-        data.parent.mkdir(parents=True, exist_ok=True)
-        for dataset in config.datasets:
-            path = data.joinpath(dataset).with_suffix(".conllu")
-            if not path.exists():
-                self.download(dataset=dataset)
+        self.dataset = utils.path("data") / f"{self.config.language}.conllu"
+        self.dataset.parent.mkdir(parents=True, exist_ok=True)
 
-    def load(self) -> Dict[str, Dataset]:
-        parses = defaultdict(dict)
-        for dataset in self.config.datasets:
-            with open(f"data/{dataset}.conllu", mode="r") as f:
-                data = f.read()
-                parsed = conllu.parse(data)
-                cutoff = int(len(parsed)*0.8)
-                parses[dataset] = Dataset(
-                    name=dataset, 
-                    train=parsed[:cutoff], 
-                    test=parsed[cutoff:]
-                )
-        return dict(parses)
+        if not self.dataset.exists():
+            self.download(dataset=self.config.language)
+
+    def load(self, train_size: float = 0.8) -> Dataset:
+        parsed = conllu.parse(self.dataset.read_text(encoding="utf8"))
+        threshold = int(len(parsed) * train_size)
+        return Dataset(
+            name=self.config.language,
+            train=parsed[:threshold],
+            test=parsed[threshold:],
+        )
 
     def download(self, dataset: str) -> None:
         r = requests.get(dataset2url[dataset], stream=True)

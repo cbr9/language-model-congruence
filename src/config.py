@@ -11,6 +11,6 @@ class TokenType(str, Enum):
 class Config:
     gpu: Optional[int]
     
-    token_type: TokenType
-    datasets: Tuple[str, str]
+    token_type: str
+    language: str
     models: Tuple[str, str]
