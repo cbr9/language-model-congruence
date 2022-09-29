@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - lm@input_model: ???
+  - lm@output_model: ???
+  - model: linear_nn
+
+
+
+gpu: 1
+seed: 45
+language: ???
+
+
+hydra:
+  job:
+    chdir: true

@@ -1,16 +1,8 @@
-from dataclasses import dataclass
-from enum import Enum
-from typing import Optional, Tuple
-
-class TokenType(str, Enum):
-    lemma = "lemma"
-    form = "form"
-
+from pydantic.dataclasses import dataclass
+from typing import Tuple
 
 @dataclass
 class Config:
-    gpu: Optional[int]
-    
     token_type: str
     language: str
-    models: Tuple[str, str]
+    language_models: Tuple[str, str]
