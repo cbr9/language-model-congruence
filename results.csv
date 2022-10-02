@@ -1,0 +1,362 @@
+gpu	seed	language	input_model.id	output_model.id	model._target_	model.epochs	model.learning_rate	model.scheduler_factor	model.scheduler_patience	score
+0	45	spanish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.719542384147644
+	45	german	xlm-roberta-large	xlm-roberta-large						0.0
+	45	finnish	bert-base-multilingual-uncased	xlm-roberta-large						11.776836
+	45	russian	xlm-roberta-base	bert-base-multilingual-uncased						22.418764
+	45	japanese	xlm-roberta-base	xlm-roberta-large						19.562956
+	45	russian	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	chinese	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	spanish	bert-base-multilingual-uncased	xlm-roberta-base						22.741144
+	45	french	xlm-roberta-base	xlm-roberta-base						0.0
+	45	thai	xlm-roberta-base	bert-base-multilingual-uncased						25.771315
+	45	german	xlm-roberta-base	bert-base-multilingual-uncased						22.80562
+	45	polish	xlm-roberta-large	bert-base-multilingual-uncased						12.068464
+	45	swedish	bert-base-multilingual-uncased	xlm-roberta-large						13.003891
+	45	hindi	xlm-roberta-base	xlm-roberta-large						19.318499
+	45	arabic	xlm-roberta-large	xlm-roberta-large						0.0
+	45	thai	xlm-roberta-large	xlm-roberta-base						19.31964
+	45	thai	xlm-roberta-base	xlm-roberta-large						19.319307
+	45	icelandic	bert-base-multilingual-uncased	xlm-roberta-large						13.372573
+	45	icelandic	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	spanish	xlm-roberta-base	xlm-roberta-base						0.0
+	45	korean	xlm-roberta-base	xlm-roberta-large						19.67056
+	45	german	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	swedish	bert-base-multilingual-uncased	xlm-roberta-base						23.091978
+	45	indonesian	bert-base-multilingual-uncased	xlm-roberta-base						22.557135
+	45	arabic	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	french	xlm-roberta-large	xlm-roberta-base						19.95977
+	45	japanese	bert-base-multilingual-uncased	xlm-roberta-large						13.8252945
+	45	indonesian	xlm-roberta-large	xlm-roberta-large						0.0
+	45	swedish	xlm-roberta-base	xlm-roberta-base						0.0
+	45	italian	xlm-roberta-base	xlm-roberta-large						19.97433
+	45	czech	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	english	xlm-roberta-base	bert-base-multilingual-uncased						22.959686
+	45	russian	xlm-roberta-large	xlm-roberta-base						19.71063
+	45	japanese	bert-base-multilingual-uncased	xlm-roberta-base						23.49537
+	45	thai	bert-base-multilingual-uncased	xlm-roberta-base						25.771315
+	45	english	bert-base-multilingual-uncased	xlm-roberta-base						22.959686
+	45	polish	xlm-roberta-base	xlm-roberta-large						19.729193
+	45	thai	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	italian	bert-base-multilingual-uncased	xlm-roberta-base						22.726376
+	45	swedish	xlm-roberta-large	xlm-roberta-large						0.0
+	45	finnish	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	turkish	xlm-roberta-base	xlm-roberta-base						0.0
+	45	chinese	xlm-roberta-base	bert-base-multilingual-uncased						25.772758
+	45	turkish	xlm-roberta-large	xlm-roberta-large						0.0
+	45	indonesian	xlm-roberta-base	xlm-roberta-base						0.0
+	45	chinese	xlm-roberta-base	xlm-roberta-base						0.0
+	45	japanese	xlm-roberta-large	xlm-roberta-base						19.564848
+	45	korean	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	turkish	bert-base-multilingual-uncased	xlm-roberta-base						22.187666
+	45	english	xlm-roberta-base	xlm-roberta-base						0.0
+	45	chinese	bert-base-multilingual-uncased	xlm-roberta-large						15.945579
+	45	russian	xlm-roberta-large	bert-base-multilingual-uncased						12.129958
+	45	arabic	bert-base-multilingual-uncased	xlm-roberta-base						21.879358
+	45	icelandic	xlm-roberta-large	bert-base-multilingual-uncased						13.364277
+	45	arabic	xlm-roberta-base	xlm-roberta-large						19.264322
+	45	swedish	xlm-roberta-large	bert-base-multilingual-uncased						13.00645
+	45	indonesian	xlm-roberta-large	xlm-roberta-base						19.848701
+	45	portuguese	bert-base-multilingual-uncased	xlm-roberta-base						22.810728
+	45	czech	xlm-roberta-large	xlm-roberta-large						0.0
+	45	spanish	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	icelandic	xlm-roberta-base	bert-base-multilingual-uncased						23.05976
+	45	italian	xlm-roberta-large	xlm-roberta-base						19.97181
+	45	japanese	xlm-roberta-base	xlm-roberta-base						0.0
+	45	french	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	turkish	xlm-roberta-large	xlm-roberta-base						19.78836
+	45	portuguese	xlm-roberta-large	bert-base-multilingual-uncased						13.094324
+	45	swedish	xlm-roberta-base	bert-base-multilingual-uncased						23.091978
+	45	japanese	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	korean	xlm-roberta-large	bert-base-multilingual-uncased						13.527751
+	45	english	xlm-roberta-large	bert-base-multilingual-uncased						13.223882
+	45	portuguese	xlm-roberta-base	xlm-roberta-large						19.786346
+	45	spanish	xlm-roberta-large	bert-base-multilingual-uncased						12.754164
+	45	chinese	xlm-roberta-large	xlm-roberta-large						0.0
+	45	english	xlm-roberta-base	xlm-roberta-large						19.860165
+	45	german	xlm-roberta-base	xlm-roberta-base						0.0
+	45	turkish	xlm-roberta-base	bert-base-multilingual-uncased						22.187666
+	45	indonesian	bert-base-multilingual-uncased	xlm-roberta-large						12.446795
+	45	czech	bert-base-multilingual-uncased	xlm-roberta-large						12.255664
+	45	finnish	xlm-roberta-base	xlm-roberta-base						0.0
+	45	thai	xlm-roberta-large	bert-base-multilingual-uncased						15.953531
+	45	hindi	xlm-roberta-base	bert-base-multilingual-uncased						25.811817
+	45	english	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	finnish	xlm-roberta-base	xlm-roberta-large						19.772022
+	45	french	bert-base-multilingual-uncased	xlm-roberta-base						22.713366
+	45	czech	xlm-roberta-base	bert-base-multilingual-uncased						22.434328
+	45	czech	bert-base-multilingual-uncased	xlm-roberta-base						22.434328
+	45	german	bert-base-multilingual-uncased	xlm-roberta-large						12.607697
+	45	polish	bert-base-multilingual-uncased	xlm-roberta-large						12.066243
+	45	korean	xlm-roberta-large	xlm-roberta-base						19.669582
+	45	hindi	xlm-roberta-large	bert-base-multilingual-uncased						16.026953
+	45	french	xlm-roberta-base	bert-base-multilingual-uncased						22.713366
+	45	english	bert-base-multilingual-uncased	xlm-roberta-large						13.219689
+	45	korean	xlm-roberta-base	bert-base-multilingual-uncased						23.43066
+	45	russian	bert-base-multilingual-uncased	xlm-roberta-base						22.418764
+	45	finnish	xlm-roberta-large	xlm-roberta-base						19.777996
+	45	arabic	bert-base-multilingual-uncased	xlm-roberta-large						10.846747
+	45	korean	bert-base-multilingual-uncased	xlm-roberta-large						13.522604
+	45	indonesian	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	finnish	xlm-roberta-large	bert-base-multilingual-uncased						11.784153
+	45	thai	bert-base-multilingual-uncased	xlm-roberta-large						15.95554
+	45	korean	xlm-roberta-base	xlm-roberta-base						0.0
+	45	turkish	xlm-roberta-large	bert-base-multilingual-uncased						11.693746
+	45	turkish	bert-base-multilingual-uncased	xlm-roberta-large						11.688598
+	45	italian	xlm-roberta-large	xlm-roberta-large						0.0
+	45	chinese	xlm-roberta-large	bert-base-multilingual-uncased						15.947069
+	45	french	xlm-roberta-large	xlm-roberta-large						0.0
+	45	icelandic	xlm-roberta-base	xlm-roberta-base						0.0
+	45	italian	bert-base-multilingual-uncased	xlm-roberta-large						12.874085
+	45	german	xlm-roberta-large	xlm-roberta-base						19.837788
+	45	hindi	xlm-roberta-base	xlm-roberta-base						0.0
+	45	indonesian	xlm-roberta-base	bert-base-multilingual-uncased						22.557135
+	45	german	xlm-roberta-base	xlm-roberta-large						19.830914
+	45	portuguese	bert-base-multilingual-uncased	xlm-roberta-large						13.08397
+	45	chinese	bert-base-multilingual-uncased	xlm-roberta-base						25.772758
+	45	arabic	xlm-roberta-large	bert-base-multilingual-uncased						10.846821
+	45	chinese	xlm-roberta-large	xlm-roberta-base						19.316849
+	45	english	xlm-roberta-large	xlm-roberta-large						0.0
+	45	indonesian	xlm-roberta-base	xlm-roberta-large						19.845554
+	45	korean	bert-base-multilingual-uncased	xlm-roberta-base						23.43066
+	45	hindi	xlm-roberta-large	xlm-roberta-base						19.318993
+	45	spanish	xlm-roberta-base	xlm-roberta-large						19.747627
+	45	russian	xlm-roberta-large	xlm-roberta-large						0.0
+	45	portuguese	xlm-roberta-large	xlm-roberta-base						19.788342
+	45	portuguese	xlm-roberta-large	xlm-roberta-large						0.0
+	45	turkish	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	polish	bert-base-multilingual-uncased	xlm-roberta-base						22.471214
+	45	english	xlm-roberta-large	xlm-roberta-base						19.863792
+	45	spanish	bert-base-multilingual-uncased	xlm-roberta-large						12.733876
+	45	czech	xlm-roberta-base	xlm-roberta-large						19.7667
+	45	russian	xlm-roberta-base	xlm-roberta-large						19.709082
+	45	french	xlm-roberta-base	xlm-roberta-large						19.95711
+	45	korean	xlm-roberta-large	xlm-roberta-large						0.0
+	45	hindi	bert-base-multilingual-uncased	xlm-roberta-large						16.026339
+	45	czech	xlm-roberta-large	bert-base-multilingual-uncased						12.247086
+	45	italian	xlm-roberta-base	xlm-roberta-base						0.0
+	45	spanish	xlm-roberta-large	xlm-roberta-base						19.745241
+	45	arabic	xlm-roberta-large	xlm-roberta-base						19.26625
+	45	french	xlm-roberta-large	bert-base-multilingual-uncased						13.023934
+	45	portuguese	xlm-roberta-base	xlm-roberta-base						0.0
+	45	thai	xlm-roberta-large	xlm-roberta-large						0.0
+	45	polish	xlm-roberta-large	xlm-roberta-base						19.735483
+	45	spanish	xlm-roberta-base	bert-base-multilingual-uncased						22.741144
+	45	japanese	xlm-roberta-large	bert-base-multilingual-uncased						13.822261
+	45	swedish	xlm-roberta-base	xlm-roberta-large						19.875868
+	45	portuguese	xlm-roberta-base	bert-base-multilingual-uncased						22.810728
+	45	finnish	xlm-roberta-large	xlm-roberta-large						0.0
+	45	finnish	bert-base-multilingual-uncased	xlm-roberta-base						22.282251
+	45	swedish	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	italian	xlm-roberta-large	bert-base-multilingual-uncased						12.895967
+	45	spanish	xlm-roberta-large	xlm-roberta-large						0.0
+	45	russian	bert-base-multilingual-uncased	xlm-roberta-large						12.120027
+	45	icelandic	xlm-roberta-base	xlm-roberta-large						19.915081
+	45	japanese	xlm-roberta-large	xlm-roberta-large						0.0
+	45	chinese	xlm-roberta-base	xlm-roberta-large						19.316717
+	45	turkish	xlm-roberta-base	xlm-roberta-large						19.783457
+	45	italian	xlm-roberta-base	bert-base-multilingual-uncased						22.726376
+	45	italian	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	czech	xlm-roberta-base	xlm-roberta-base						0.0
+	45	russian	xlm-roberta-base	xlm-roberta-base						0.0
+	45	hindi	bert-base-multilingual-uncased	xlm-roberta-base						25.811817
+	45	polish	xlm-roberta-large	xlm-roberta-large						0.0
+	45	finnish	xlm-roberta-base	bert-base-multilingual-uncased						22.282251
+	45	indonesian	xlm-roberta-large	bert-base-multilingual-uncased						12.468232
+	45	arabic	xlm-roberta-base	xlm-roberta-base						0.0
+	45	polish	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	arabic	xlm-roberta-base	bert-base-multilingual-uncased						21.879358
+	45	czech	xlm-roberta-large	xlm-roberta-base						19.76871
+	45	polish	xlm-roberta-base	bert-base-multilingual-uncased						22.471214
+	45	hindi	xlm-roberta-large	xlm-roberta-large						0.0
+	45	hindi	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	japanese	xlm-roberta-base	bert-base-multilingual-uncased						23.49537
+	45	polish	xlm-roberta-base	xlm-roberta-base						0.0
+	45	portuguese	bert-base-multilingual-uncased	bert-base-multilingual-uncased						0.0
+	45	thai	xlm-roberta-base	xlm-roberta-base						0.0
+	45	icelandic	xlm-roberta-large	xlm-roberta-large						0.0
+	45	german	bert-base-multilingual-uncased	xlm-roberta-base						22.80562
+	45	icelandic	bert-base-multilingual-uncased	xlm-roberta-base						23.05976
+	45	french	bert-base-multilingual-uncased	xlm-roberta-large						13.013349
+	45	swedish	xlm-roberta-large	xlm-roberta-base						19.88007
+	45	german	xlm-roberta-large	bert-base-multilingual-uncased						12.620052
+	45	icelandic	xlm-roberta-large	xlm-roberta-base						19.9178
+0	45	german	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9544624090194702
+0	45	finnish	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.8268370628356934
+0	45	russian	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.9969868659973145
+0	45	japanese	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.5672781467437744
+0	45	russian	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2773634195327759
+0	45	chinese	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.25423428416252136
+0	45	spanish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.7212475538253784
+0	45	french	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5345686078071594
+0	45	thai	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6466782689094543
+0	45	german	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.203562259674072
+0	45	polish	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.135086536407471
+0	45	swedish	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	4.036104202270508
+0	45	hindi	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.49883973598480225
+0	45	arabic	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.8427930474281311
+0	45	thai	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.3013846278190613
+0	45	thai	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.49079012870788574
+0	45	icelandic	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	4.217400550842285
+0	45	icelandic	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.37877416610717773
+0	45	spanish	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5127137899398804
+0	45	korean	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.510728120803833
+0	45	german	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.25674763321876526
+0	45	swedish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.9622761011123657
+0	45	indonesian	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.0489728450775146
+0	45	arabic	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.608590304851532
+0	45	french	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6363786458969116
+0	45	japanese	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.934998035430908
+0	45	indonesian	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9732705354690552
+0	45	swedish	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5255845189094543
+0	45	italian	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.5370116233825684
+0	45	czech	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.28944459557533264
+0	45	english	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.578054904937744
+0	45	russian	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6032285690307617
+0	45	japanese	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.5317933559417725
+0	45	thai	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.36790552735328674
+0	45	english	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.9176068305969238
+0	45	polish	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.1885316371917725
+0	45	thai	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2662140130996704
+0	45	italian	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.851004719734192
+0	45	swedish	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.97564297914505
+0	45	finnish	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.31421518325805664
+0	45	turkish	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5517210960388184
+0	45	chinese	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6393757462501526
+0	45	turkish	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9993350505828857
+0	45	indonesian	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5132115483283997
+0	45	chinese	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.43874430656433105
+0	45	japanese	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.2834547758102417
+0	45	korean	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6120176911354065
+0	45	turkish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.1048901081085205
+0	45	english	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5348143577575684
+0	45	chinese	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.41875967383384705
+0	45	russian	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.163661003112793
+0	45	arabic	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.2348906993865967
+0	45	icelandic	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.254329681396484
+0	45	arabic	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.9600191116333008
+0	45	swedish	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.398807048797607
+0	45	indonesian	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.7637300491333008
+0	45	portuguese	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.7394933700561523
+0	45	czech	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9866655468940735
+0	45	spanish	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.31223952770233154
+0	45	icelandic	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.117443561553955
+0	45	italian	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.5983588695526123
+0	45	japanese	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5058727860450745
+0	45	french	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.24903461337089539
+0	45	turkish	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.8137372732162476
+0	45	portuguese	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.430182933807373
+0	45	swedish	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.196187973022461
+0	45	japanese	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5391747355461121
+0	45	korean	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	5.4365363121032715
+0	45	english	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.842813491821289
+0	45	portuguese	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.017272710800171
+0	45	spanish	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.569912433624268
+0	45	chinese	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5768425464630127
+0	45	english	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.413428544998169
+0	45	german	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5261719226837158
+0	45	turkish	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.963263511657715
+0	45	indonesian	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	4.028583526611328
+0	45	czech	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.81748366355896
+0	45	finnish	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5129498839378357
+0	45	thai	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6869643330574036
+0	45	hindi	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6578102111816406
+0	45	english	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2666997015476227
+0	45	finnish	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.1985275745391846
+0	45	french	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.8924236297607422
+0	45	czech	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.9870476722717285
+0	45	czech	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.9976160526275635
+0	45	german	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.8559324741363525
+0	45	polish	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.779844045639038
+0	45	korean	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.2663012742996216
+0	45	hindi	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.7170004844665527
+0	45	french	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.079776763916016
+0	45	english	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.948223114013672
+0	45	korean	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	5.556870937347412
+0	45	russian	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.909640908241272
+0	45	finnish	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6025381088256836
+0	45	arabic	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.167073965072632
+0	45	korean	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	2.834447145462036
+0	45	indonesian	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.23574483394622803
+0	45	finnish	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.772097587585449
+0	45	thai	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.42765989899635315
+0	45	korean	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.485757440328598
+0	45	turkish	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.073803901672363
+0	45	turkish	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.9245333671569824
+0	45	italian	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.0029598474502563
+0	45	chinese	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6908895373344421
+0	45	french	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.0092926025390625
+0	45	icelandic	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5827229619026184
+0	45	italian	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	4.070863723754883
+0	45	german	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.7014453411102295
+0	45	hindi	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.44287171959877014
+0	45	indonesian	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.199925422668457
+0	45	german	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.3256309032440186
+0	45	portuguese	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.517747640609741
+0	45	chinese	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.358889639377594
+0	45	arabic	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.5346245765686035
+0	45	chinese	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2844909429550171
+0	45	english	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9757598638534546
+0	45	indonesian	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.417665719985962
+0	45	korean	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.4563536643981934
+0	45	hindi	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.30725783109664917
+0	45	spanish	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.050196647644043
+0	45	russian	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9453396201133728
+0	45	portuguese	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.4661651849746704
+0	45	portuguese	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.016814947128296
+0	45	turkish	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.24500204622745514
+0	45	polish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.93462073802948
+0	45	english	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6808984279632568
+0	45	spanish	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.5369374752044678
+0	45	czech	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.2835710048675537
+0	45	russian	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.124790668487549
+0	45	french	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.585848808288574
+0	45	korean	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.01200532913208
+0	45	hindi	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.44662827253341675
+0	45	czech	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.129636287689209
+0	45	italian	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5287489295005798
+0	45	spanish	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.452238917350769
+0	45	arabic	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.0555492639541626
+0	45	french	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.281020164489746
+0	45	portuguese	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5145416855812073
+0	45	thai	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6193998456001282
+0	45	polish	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6094253063201904
+0	45	spanish	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.4415717124938965
+0	45	japanese	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.681093692779541
+0	45	swedish	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.443922281265259
+0	45	portuguese	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.321969509124756
+0	45	finnish	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9955857992172241
+0	45	finnish	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.910104513168335
+0	45	swedish	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2797943949699402
+0	45	italian	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.084290504455566
+0	45	spanish	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9689992070198059
+0	45	russian	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.691370964050293
+0	45	icelandic	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.696136713027954
+0	45	japanese	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9361637234687805
+0	45	chinese	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.47093820571899414
+0	45	turkish	xlm-roberta-base	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.387260913848877
+0	45	italian	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.883668422698975
+0	45	italian	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.27182868123054504
+0	45	czech	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5705234408378601
+0	45	russian	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5026965141296387
+0	45	hindi	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.37654855847358704
+0	45	polish	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.9813559651374817
+0	45	finnish	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.626239776611328
+0	45	indonesian	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.373097896575928
+0	45	arabic	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5004699230194092
+0	45	polish	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2690514922142029
+0	45	arabic	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	3.5828888416290283
+0	45	czech	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6648656129837036
+0	45	polish	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.994256496429443
+0	45	hindi	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.6153015494346619
+0	45	hindi	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.2640213072299957
+0	45	japanese	xlm-roberta-base	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	6.595775604248047
+0	45	polish	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.5347397923469543
+0	45	portuguese	bert-base-multilingual-uncased	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.4924509525299072
+0	45	thai	xlm-roberta-base	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	0.4524340331554413
+0	45	icelandic	xlm-roberta-large	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.0271977186203003
+0	45	german	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.966825246810913
+0	45	icelandic	bert-base-multilingual-uncased	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.9263687133789062
+0	45	french	bert-base-multilingual-uncased	xlm-roberta-large	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	4.108406066894531
+0	45	swedish	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6933481693267822
+0	45	german	xlm-roberta-large	bert-base-multilingual-uncased	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	7.412188529968262
+0	45	icelandic	xlm-roberta-large	xlm-roberta-base	src.linear_model.LinearModel	1000.0	0.005	0.1	10.0	1.6574045419692993

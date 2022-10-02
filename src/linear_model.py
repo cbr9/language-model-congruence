@@ -4,21 +4,20 @@ dotenv.load_dotenv()
 
 import logging
 
+import torch.nn as nn
 import torch
-
-
 
 log = logging.getLogger(__name__)
 
 
-class LinearModel(torch.nn.Module):
+class LinearModel(nn.Module):
     def __init__(
-        self, 
-        input_dim: int, 
-        output_dim: int, 
-        epochs: int, 
-        learning_rate: float, 
-        scheduler_factor: float, 
+        self,
+        input_dim: int,
+        output_dim: int,
+        epochs: int,
+        learning_rate: float,
+        scheduler_factor: float,
         scheduler_patience: int
     ) -> None:
         super().__init__()

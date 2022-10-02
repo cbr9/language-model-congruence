@@ -6,7 +6,7 @@ defaults:
 
 
 
-gpu: 1
+gpu: null
 seed: 45
 language: ???
 

@@ -1,0 +1,16 @@
+defaults:
+  - _self_
+  - lm@input_model: ???
+  - lm@output_model: ???
+  - model: gromov
+
+
+
+gpu: null
+seed: 45
+language: ???
+
+
+hydra:
+  job:
+    chdir: true

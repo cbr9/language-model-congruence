@@ -2,11 +2,11 @@ defaults:
   - _self_
   - lm@input_model: ???
   - lm@output_model: ???
-  - model: linear_nn
+  - model: pca
 
 
 
-gpu: 1
+gpu: null
 seed: 45
 language: ???
 

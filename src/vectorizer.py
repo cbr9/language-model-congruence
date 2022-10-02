@@ -1,21 +1,26 @@
 import uuid
 from collections import defaultdict
 from pathlib import Path
-from typing import List, Optional
-
-from pydantic import BaseModel, PrivateAttr
+from typing import (
+    List,
+    Optional,
+)
 
 import numpy as np
 import pandas as pd
 import torch
 import tqdm
 from pandas import DataFrame
+from pydantic import (
+    BaseModel,
+    PrivateAttr,
+)
 from transformers import (
     AutoModel,
     AutoTokenizer,
-    logging,
-    PreTrainedTokenizerBase,
     PreTrainedModel,
+    PreTrainedTokenizerBase,
+    logging,
 )
 
 import src.utils as utils
@@ -40,13 +45,17 @@ class Vectorizer(BaseModel):
     _tokenizer: PreTrainedTokenizerBase = PrivateAttr(default=None)
     _index_dir: Path = PrivateAttr(default=None)
 
-    def __init__(self, **data):
+    def __init__(
+        self, **data
+    ):
         super().__init__(**data)
         self._index_dir = utils.path(".cache")
         self._index_dir.mkdir(exist_ok=True)
 
     @property
-    def device(self):
+    def device(
+        self
+    ):
         if self._device is None:
             self._device = torch.device(
                 "cpu" if self.gpu is None else f"cuda:{self.gpu}"
@@ -54,100 +63,100 @@ class Vectorizer(BaseModel):
         return self._device
 
     @property
-    def tokenizer(self):
+    def tokenizer(
+        self
+    ):
         if self._tokenizer is None:
             self._tokenizer = AutoTokenizer.from_pretrained(self.id)
         return self._tokenizer
 
     @property
-    def model(self):
+    def model(
+        self
+    ):
         if self._model is None:
             self._model = AutoModel.from_pretrained(self.id).to(self.device)
             self._model.eval()
         return self._model
 
     @property
-    def index(self) -> DataFrame:
+    def index(
+        self
+    ) -> DataFrame:
         if self._index is None:
             path = self._index_dir / "index.csv"
             if path.exists():
                 self._index = pd.read_csv(path, engine="pyarrow")
             else:
                 self._index = DataFrame(
-                    columns=["model", "language", "id", "token_type"],
-                )
+                    columns=["model", "language", "id", "token_type"], )
             self.clean_cache()
         return self._index
 
-    def index_row(self, identifier: str):
+    def index_row(
+        self, identifier: str
+    ):
         return DataFrame(
-            [
-                {
-                    "model": self.id,
-                    "language": self.language,
-                    "id": identifier,
-                    "token_type": self.token_type,
-                }
-            ]
+            [{
+                "model": self.id, "language": self.language, "id": identifier, "token_type": self.token_type,
+            }]
         )
 
-    def clean_cache(self):
+    def clean_cache(
+        self
+    ):
         valid_ids = set(self._index.id.tolist())
         for file in self._index_dir.iterdir():
             if file.stem != "index" and file.stem not in valid_ids:
                 file.unlink()
 
     def retrieve(self) -> np.ndarray | None:
-        mask = (
-            (self.index.model == self.id)
-            & (self.index.language == self.language)
-            & (self.index.token_type == self.token_type)
-        )
+        mask = ((self.index.model == self.id) & (self.index.language == self.language) & (
+                self.index.token_type == self.token_type))
         row = self.index[mask]
 
         if not row.empty:
             assert len(row) == 1
             id_ = row.id.iloc[0]
-            path = self._index_dir / f"{id_}.npy"
-            return np.load(path)
+            path = str(self._index_dir / f"{id_}.npy")
+            try:
+                return np.load(path)
+            except FileNotFoundError:
+                return None
 
         return None
 
-    def store(self, embeddings: np.ndarray) -> None:
+    def store(
+        self, embeddings: np.ndarray
+    ) -> None:
         ids = self.index.id.tolist()
         while True:
             id_ = str(uuid.uuid4())
             if id_ not in ids:
-                np.save(self._index_dir / f"{id_}.npy", embeddings)
+                np.save(file=str(self._index_dir / f"{id_}.npy"), arr=embeddings)
                 self._index = pd.concat(
-                    [self.index, self.index_row(identifier=id_)],
-                    ignore_index=True,
-                )
+                    [self.index, self.index_row(identifier=id_)], ignore_index=True, )
                 path = self._index_dir / "index.csv"
                 self._index.to_csv(path, index=False)
                 break
 
-    def __call__(self, sentences: List[Sentence]) -> np.ndarray:
+    def __call__(
+        self, sentences: List[Sentence]
+    ) -> np.ndarray:
 
         word_embeddings = self.retrieve()
         if word_embeddings is None:
             word_embeddings = []
             batch_size = 100
-            batches = [
-                sentences[i : i + batch_size]
-                for i in range(0, len(sentences), batch_size)
-            ]
+            batches = [sentences[i: i + batch_size] for i in range(0, len(sentences), batch_size)]
             for batch in tqdm.tqdm(
-                batches, desc=f"Computing vectors for model {self.id}", leave=False
+                    batches, desc=f"Computing vectors for model {self.id}", leave=False
             ):
                 tokens = [sent.tokens for sent in batch]
                 batch_tokenization = self.tokenizer(
-                    tokens,
-                    is_split_into_words=True,
-                    return_tensors="pt",
-                    truncation=True,
-                    padding=True,
-                ).to(self.device)
+                    tokens, is_split_into_words=True, return_tensors="pt", truncation=True, padding=True, ).to(
+                    self.device
+                )
 
                 with torch.no_grad():
                     batch_embeddings = self.model(
